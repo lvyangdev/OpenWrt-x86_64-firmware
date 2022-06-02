@@ -12,4 +12,9 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+
+# Add My Packages
 git clone https://github.com/lvyangdev/openwrt-packages.git package/my_packages
+
+# Del package/system/opkg, use my_packages'opkg
+rm -rf package/system/opkg
