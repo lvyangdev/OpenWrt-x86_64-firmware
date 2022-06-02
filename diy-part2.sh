@@ -16,5 +16,5 @@
 # Add My Packages
 git clone https://github.com/lvyangdev/openwrt-packages.git package/my_packages
 
-# Del package/system/opkg, use my_packages'opkg
-rm -rf package/system/opkg
+# use our opkg package
+mv package/my_packages/opkg package/system/
