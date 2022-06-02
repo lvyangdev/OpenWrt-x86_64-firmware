@@ -17,4 +17,5 @@
 git clone https://github.com/lvyangdev/openwrt-packages.git package/my_packages
 
 # use our opkg package
+rm -rf package/system/opkg
 mv package/my_packages/opkg package/system/
